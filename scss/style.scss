@@ -81,13 +81,11 @@
         .link-primary {
             // tetx
             @extend .link;
-            padding: 11px 30px;
+            padding: 12px 30px;
             border: none;
 
             // background
             background: #69b9ff;
-            width: 138px;
-            height: 45px;
             transition: background-color 0.2s;
 
             &:hover {

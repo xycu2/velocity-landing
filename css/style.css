@@ -98,9 +98,7 @@ p {
   display: inline-block;
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 183px;
-  height: 43px;
-  padding: 10px 30px;
+  padding: 12px 30px;
   transition: border-color 0.1s, background-color 0.1s;
 }
 .link:hover, .welcome__links .link-primary:hover {
@@ -171,11 +169,9 @@ p {
   margin-left: 20px;
 }
 .welcome__links .link-primary {
-  padding: 11px 30px;
+  padding: 12px 30px;
   border: none;
   background: #69b9ff;
-  width: 138px;
-  height: 45px;
   transition: background-color 0.2s;
 }
 .welcome__links .link-primary:hover {
