@@ -114,7 +114,7 @@
         text-align: center;
         color: $color-title;
 
-        padding-bottom: 17px;
+        margin-bottom: 17px;
     }
     
     &__text {
@@ -124,7 +124,7 @@
         text-align: center;
         color: $color-desc;
 
-        padding-bottom: 60px;
+        margin-bottom: 60px;
     }
     
     &__list {
@@ -135,7 +135,7 @@
         justify-content: center;
     }
     
-    .features__card {
+    &__card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -147,15 +147,18 @@
         border-radius: 5px;
         
 
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        min-height: 300px;
+        max-width: 300px;
+        padding: 40px 16px;
         &-img {
             height: 94px;
             width: 94px;
+            flex-shrink: 0;
         }
         
         &-text {
-            margin: 15px;
+            margin: 20px 0 15px 0;
             line-height: 1.3;
             font-size: 20px;
             letter-spacing: 0.35em;
@@ -165,9 +168,12 @@
         }
         
         &-desc {
-            width: 268px;
+            width: 100%;
+            max-width: 268px;
             text-align: center;
             color: $color-p;
+            font-size: 14px;
+            line-height: 1.5;
         }
     }
 
