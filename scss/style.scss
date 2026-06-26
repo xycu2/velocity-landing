@@ -1,0 +1,31 @@
+@use "reset" as *;
+@use "base" as *;
+
+
+.header {
+    padding: 18px 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__nav a {
+        font-size: 16px;
+        color: #676770;
+
+        &:hover {
+             color: #0082f3;
+        }
+
+        &:active {
+            color: #0057A2;
+        }
+    }
+
+    &__nav ul {
+        display: flex;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* Reset and base styles */
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+a, a:visited, a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+img, svg, video {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+p {
+  color: #6A859C;
+  line-height: 1.8;
+}
+
+.logo {
+  font-size: 25px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #69b9ff;
+}
+
+.header {
+  padding: 18px 0;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav a {
+  font-size: 16px;
+  color: #676770;
+}
+.header__nav a:hover {
+  color: #0082f3;
+}
+.header__nav a:active {
+  color: #0057A2;
+}
+.header__nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
