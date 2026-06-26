@@ -1,9 +1,19 @@
 @use "reset" as *;
 @use "base" as *;
 
+// navigation
 
 .header {
     padding: 18px 0;
+    
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    background-color: #fff;
 
     &__container {
         display: flex;
@@ -26,6 +36,68 @@
 
     &__nav ul {
         display: flex;
-        gap: 40px;
     }
+
+    &__nav li + li {
+        margin-left: 40px;
+    }
+}
+
+// Welcome sectiomn
+
+.welcome {
+    color: #fff;
+    min-height: 600px;
+    height: 100vh;
+    padding: 195px 0;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #282936;
+    background-image: url("/images/welcome-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    &__title {
+        font-size: 59px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        padding-bottom: 100px;
+    }
+    
+    &__links {
+        text-align: center;
+        text-transform: uppercase;
+
+        * + * {
+            margin-left: 20px;
+        }
+
+        .link-primary {
+            // tetx
+            @extend .link;
+            padding: 11px 30px;
+            border: none;
+
+            // background
+            background: #69b9ff;
+            width: 138px;
+            height: 45px;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: #8AC9FF;
+            }
+
+            &:active {
+                background-color: #1994FF;
+            }
+        }
+    }
+    
 }

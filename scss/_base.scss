@@ -23,3 +23,27 @@ p {
     text-transform: uppercase;
     color: #69b9ff;
 }
+
+.link {
+    font-size: 16px;
+    letter-spacing: 0.13em;
+    
+    // Rectangle
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 183px;
+    height: 43px;
+    padding: 10px 30px;
+    transition: border-color 0.1s, background-color 0.1s;
+
+        &:hover {
+            background-color: rgb(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        &:active {
+            background-color: rgb(0, 0, 0, 0.3);
+            border-color: rgba(0, 0, 0, 0.5);
+        }
+}
