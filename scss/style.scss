@@ -227,5 +227,79 @@
 }
 
 
+//  tab-section
+
+.tab {
+
+    &__title {
+        @extend %section-title;
+        color: $color-title;
+    }
+    
+    &__text {
+        @extend %section-text;
+        color: $color-desc;
+    }
+    
+    &__btn {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    
+    margin: 60px 0 40px;
+
+        &-item {
+        // text
+        font-size: 16px;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+
+        // background / btn
+        background: #92a0ad;
+
+        border-radius: 4px;
+        width: 196px;
+        height: 21px;
+            &--blue {
+                 background: #2e80b6;  
+            }
+        }
+        
+    }
+    
+    
+    &__img {
+        width: 940px;
+        max-width: 100%;
+        height: 627px;
+
+        object-fit: cover;
+        display: block;
+
+    }
+    
+    &__subtitle {
+        font-size: 31px;
+        line-height: 116%;
+        text-align: center;
+        color: $color-title;
+
+        margin: 15px 0;
+    }
+    
+    &__subtext {
+    
+    &-part {
+            font-size: 13px;
+            line-height: 192%;
+            text-align: center;
+            color: $color-p;
+            margin-top: 0;
+        }
+    }
+    
+}
 
 
