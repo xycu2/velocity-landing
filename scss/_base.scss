@@ -17,6 +17,20 @@ p {
     line-height: 1.8;
 }
 
+.common-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.common-section--dark {
+    background-color: #192024;
+}
+
+.common-section--dark * {
+    color: #fff;
+}
+
+
 .logo {
     font-size: 25px;
     letter-spacing: 0.16em;
@@ -24,9 +38,19 @@ p {
     color: #69b9ff;
 }
 
+
+
 .link {
+
     font-size: 16px;
     letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #fff; 
+
+    &, &:visited, &:hover, &:focus, &:active {
+        color: #fff !important; 
+    }
+
     
     // Rectangle
     display: inline-block;
@@ -41,7 +65,32 @@ p {
         }
 
         &:active {
-            background-color: rgb(0, 0, 0, 0.3);
-            border-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(172, 152, 152, 0.432);
+            border-color: rgba(213, 187, 187, 0.5);
         }
+
+
+}
+
+// text and title in features and services
+%section-title {
+        font-size: 30px;
+        letter-spacing: 0.17em;
+        margin-bottom: 17px;
+        text-transform: uppercase;
+}
+
+%section-text {
+        font-size: 17px;
+        letter-spacing: 0.18em;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+}
+
+
+%section-desc {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
 }

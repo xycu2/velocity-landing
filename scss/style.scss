@@ -15,6 +15,7 @@
     z-index: 100;
 
     background-color: #fff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 
     &__container {
         display: flex;
@@ -47,7 +48,6 @@
 // Welcome sectiomn
 
 .welcome {
-    color: #fff;
     min-height: 600px;
     height: 100vh;
     padding: 195px 0;
@@ -65,6 +65,7 @@
 
 
     &__title {
+        color: #fff;
         font-size: 59px;
         letter-spacing: 0.07em;
         text-transform: uppercase;
@@ -105,26 +106,16 @@
 // Features 
 
 .features {
-    padding: 80px 0;
 
     &__title {
-        font-size: 30px;
-        letter-spacing: 0.17em;
-        text-transform: uppercase;
-        text-align: center;
+        @extend %section-title;
         color: $color-title;
-
-        margin-bottom: 17px;
     }
     
     &__text {
-        font-size: 17px;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        text-align: center;
+        @extend %section-text;
+        
         color: $color-desc;
-
-        margin-bottom: 60px;
     }
     
     &__list {
@@ -142,7 +133,6 @@
         justify-content: center;
         
 
-        background: #fff;
         border: 1px solid #dcebf7;
         border-radius: 5px;
         
@@ -152,13 +142,14 @@
         max-width: 300px;
         padding: 40px 16px;
         &-img {
+            flex-shrink: 0;
+            object-fit: contain;
             height: 94px;
             width: 94px;
-            flex-shrink: 0;
         }
         
         &-text {
-            margin: 20px 0 15px 0;
+            margin: 20px 0 15px;
             line-height: 1.3;
             font-size: 20px;
             letter-spacing: 0.35em;
@@ -168,15 +159,73 @@
         }
         
         &-desc {
-            width: 100%;
+            @extend %section-desc;
+
             max-width: 268px;
-            text-align: center;
             color: $color-p;
-            font-size: 14px;
-            line-height: 1.5;
         }
     }
-
 }
+
+// Services
+.services {
+    
+    &__title {
+        @extend %section-title;
+    }
+    
+    &__text {
+        @extend %section-text;
+        color: #e8e8e8;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+    }
+    
+    &__card {
+        a {
+            margin-top: 20px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        width: 100%;
+        max-width: 460px;
+        min-height: 550px;
+
+
+        &-img {
+            width: 430px;
+            height: 287px;
+            flex-shrink: 0;
+        }
+        
+        &-title {
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            text-align: center;
+
+            margin: 20px 0;
+        }
+        
+        &-desc {
+            @extend %section-desc;
+
+            max-width: 400px;
+        }
+    }
+}
+
+
 
 
