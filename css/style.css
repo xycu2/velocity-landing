@@ -354,6 +354,9 @@ p {
   margin-top: 0;
 }
 
+.footer {
+  margin-top: 40px;
+}
 .footer__top {
   display: flex;
   justify-content: space-between;
@@ -399,10 +402,20 @@ p {
   align-items: center;
   gap: 10px;
 }
-.footer .footer__social-icon {
+.footer__social-icon {
   height: 18px;
   width: 18px;
   object-fit: contain;
+}
+.footer__bottom {
+  margin-top: 35px;
+  padding: 40px 0;
+}
+.footer__copyright {
+  font-size: 15px;
+  line-height: 133%;
+  text-align: center;
+  color: #9e9e9e;
 }
 
 /*# sourceMappingURL=style.css.map */

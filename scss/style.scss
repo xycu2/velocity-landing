@@ -305,6 +305,7 @@
 
 // Footer__top
 .footer {
+    margin-top: 40px;
 
     &__top {
         display: flex;
@@ -364,10 +365,22 @@
         }
     }
 
-    .footer__social-icon {
+    &__social-icon {
         height: 18px;
         width: 18px;
         object-fit: contain;
     }
     
+    // Footer__bottom 
+    &__bottom {
+        margin-top: 35px;
+        padding: 40px 0;
+    }
+    
+    &__copyright {
+        font-size: 15px;
+        line-height: 133%;
+        text-align: center;
+        color: #9e9e9e;
+    }
 }
