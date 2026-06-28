@@ -354,4 +354,55 @@ p {
   margin-top: 0;
 }
 
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer__col {
+  flex: 1;
+  max-width: 300px;
+}
+.footer__title {
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #676770;
+  margin-bottom: 22px;
+}
+.footer__desc {
+  font-size: 14px;
+  line-height: 179%;
+  color: #6a859c;
+  max-width: 300px;
+  width: 100%;
+  min-height: 175px;
+  gap: 20px;
+}
+.footer__list {
+  padding: 0;
+  margin: 0;
+}
+.footer__item {
+  border-bottom: 1px solid #d5d5e0;
+  padding: 12px 0;
+  color: #668cad;
+}
+.footer__link {
+  font-size: 13px;
+  line-height: 154%;
+  display: block;
+}
+.footer__link--social {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .footer__social-icon {
+  height: 18px;
+  width: 18px;
+  object-fit: contain;
+}
+
 /*# sourceMappingURL=style.css.map */
