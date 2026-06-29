@@ -394,6 +394,19 @@
     
 }
 
+.tabs__item {
+    animation: fade 1s;   
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 // Footer__top
 .footer {
