@@ -94,3 +94,26 @@ p {
     line-height: 1.5;
     text-align: center;
 }
+
+$breakpoint-laptop: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+@mixin laptop {
+    @media (max-width: #{$breakpoint-laptop}){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$breakpoint-tablet}) {
+        @content;
+    }
+}
+
+
+@mixin mobile {
+    @media (max-width: #{$breakpoint-mobile}){
+        @content;
+    }
+}

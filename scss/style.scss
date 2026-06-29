@@ -21,6 +21,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include tablet {
+            padding: 10px 50px;
+        }
+
+        @include mobile {
+            padding: 20px 50px;
+        }
     }
     
     &__nav a {
@@ -70,6 +78,11 @@
         letter-spacing: 0.07em;
         text-transform: uppercase;
         padding-bottom: 100px;
+
+        @include mobile {
+            font-size: 40px;
+            text-align: center;
+        }
     }
     
     &__links {
@@ -78,6 +91,17 @@
 
         * + * {
             margin-left: 20px;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            * + * {
+                margin-left: 0;
+            }
+
         }
 
         .link-primary {
@@ -116,6 +140,10 @@
         @extend %section-text;
         
         color: $color-desc;
+
+        @include mobile {
+            font-size: 14px;
+        }
     }
     
     &__list {
@@ -177,6 +205,10 @@
     &__text {
         @extend %section-text;
         color: #e8e8e8;
+
+        @include mobile {
+            font-size: 15px;
+        }
     }
 
     &__list {
@@ -184,6 +216,14 @@
         align-items: center;
         justify-content: center;
         gap: 35px;
+
+        @include tablet {
+            flex-wrap: wrap;
+    }
+        
+        @include mobile {
+            flex-wrap: wrap;
+        }
     }
     
     &__card {
@@ -201,6 +241,17 @@
         max-width: 460px;
         min-height: 550px;
 
+        @include laptop {
+            padding: 0 10px;
+        }
+
+        @include tablet {
+            max-width: 400px;
+        }
+
+       @include mobile {
+        max-width: 350px;
+       }
 
         &-img {
             width: 430px;
@@ -222,6 +273,14 @@
             @extend %section-desc;
 
             max-width: 400px;
+
+            @include tablet {
+                font-size: 13px;
+            }
+
+            @include mobile {
+                font-size: 13px;
+            }
         }
     }
 }
@@ -239,6 +298,10 @@
     &__text {
         @extend %section-text;
         color: $color-desc;
+
+        @include mobile {
+            font-size: 14px;
+        }
     }
     
     &__btn {
@@ -247,6 +310,14 @@
     justify-content: center;
     
     margin: 60px 0 40px;
+    flex-wrap: wrap;
+
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
 
         &-item {
         // text
@@ -262,6 +333,18 @@
         border-radius: 4px;
         width: 196px;
         height: 21px;
+
+        @include tablet {
+            width: 230px;
+            height: 30px;
+        }
+
+        @include mobile {
+            width: 250px;
+            height: 40px; 
+        }
+
+
             &--blue {
                  background: #2e80b6;  
             }
@@ -297,6 +380,15 @@
             text-align: center;
             color: $color-p;
             margin-top: 0;
+
+            @include tablet {
+                padding: 0 25px;
+            }
+
+            @include mobile {
+                padding: 0 10px;
+                font-size: 13px;
+            }
         }
     }
     
@@ -311,11 +403,22 @@
         display: flex;
         justify-content: space-between;
         gap: 30px;
+        flex-wrap: wrap;
+    
+        
     }
     &__col {
-        flex: 1;
+        flex: 1 1 200px;
         max-width: 300px;
-        
+
+        @include tablet {
+            max-width: 45%;
+        }
+
+        @include mobile {
+            max-width: 100%;
+            flex-basis: 100%;
+        }
     }
     
     
