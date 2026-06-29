@@ -177,6 +177,7 @@ p {
 }
 @media (max-width: 480px) {
   .header__container {
+    gap: 30px;
     padding: 20px 50px;
   }
 }
@@ -195,6 +196,11 @@ p {
 }
 .header__nav li + li {
   margin-left: 40px;
+}
+@media (max-width: 480px) {
+  .header__nav li + li {
+    margin-left: 20px;
+  }
 }
 
 .welcome {

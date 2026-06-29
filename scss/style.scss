@@ -27,6 +27,7 @@
         }
 
         @include mobile {
+            gap: 30px;
             padding: 20px 50px;
         }
     }
@@ -51,6 +52,13 @@
     &__nav li + li {
         margin-left: 40px;
     }
+
+    @include mobile {
+        &__nav li + li {
+        margin-left: 20px;
+    }
+}
+
 }
 
 // Welcome sectiomn

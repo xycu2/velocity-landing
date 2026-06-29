@@ -1,7 +1,6 @@
+// TABS
 const tabsBtns = document.querySelectorAll(".tab__btn button");
 const tabItems = document.querySelectorAll(".tabs__item");
-
-console.log(tabItems)
 
 // function hides tabs on buttons and removes tab__btn-item--blue
 
@@ -24,3 +23,23 @@ tabsBtns.forEach((btn, index) => btn.addEventListener("click", () => {
     hideTabs();
     showTab(index);
 }))
+
+
+
+// anchor
+
+const anchor = document.querySelectorAll(".header__nav a");
+
+anchor.forEach(anc => {
+    anc.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const id = anc.getAttribute('href')
+        const element = document.querySelector(id)
+
+        window.scroll({
+            top: element.offsetTop - 120,
+            behavior: 'smooth'
+        });
+    });
+});
